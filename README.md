@@ -25,43 +25,43 @@ STEP 8: Use heatmap method of representation to show relationships between two v
 ## CODING AND OUTPUT
 # Developed By: VIMALRAJ R
 # REGISTER  NO: 212223040242
-py
+```py
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 df=pd.read_csv("/content/titanic_dataset.csv")
 df
-
+```
 ![image](https://github.com/user-attachments/assets/9df3b6ee-cde2-471b-853f-757c6084c1f4)
-py
+```py
 df.info()
-
+```
 ![image](https://github.com/user-attachments/assets/79123962-b784-42d5-b436-754268388e9c)
-py
+```py
 df.shape
-
+```
 ![image](https://github.com/user-attachments/assets/40d7e572-65b0-4fb6-9e45-1240f88bafc9)
-py
+```py
 df.describe()
-
+```
 ![image](https://github.com/user-attachments/assets/efdd96e6-928c-435f-9045-3bc1c1837fcc)
-py
+```py
 df.shape
-
+```
 ![image](https://github.com/user-attachments/assets/f06ec038-64c5-49bf-b018-1e358629a2ac)
-py
+```py
 df.nunique()
-
+```
 ![image](https://github.com/user-attachments/assets/1e51651f-6336-4f9b-a298-ee6d8334f038)
-py
+```py
 df["Survived"].value_counts()
-
+```
 ![image](https://github.com/user-attachments/assets/2c991851-4d1a-4bf9-8a97-fd1ed33d6c4a)
-py
+```py
 per=(df["Survived"].value_counts()/df.shape[0]*100).round(2)
 per
-
+```
 ![image](https://github.com/user-attachments/assets/bebac8b7-01e9-464d-bbae-a983d8c3c469)
 py
 sns.countplot(x="Survived",data=df)
